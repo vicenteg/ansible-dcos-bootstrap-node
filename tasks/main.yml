@@ -1,4 +1,6 @@
 ---
+# tasks file for ansible-dcos-bootstrap-node
+
 - name: Create genconf directory
   file: path={{ item }} state=directory mode=755
   with_items:
